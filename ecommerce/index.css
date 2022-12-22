@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header{
+        
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px;
+        background-color: rgb(223, 227, 200);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+}
+#navbar{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 170px;
+       
+}
+#navbar li{
+        /* border: 1px solid teal; */
+        padding: 0 20px;
+        list-style: none;
+        position: relative;
+        
+}
+#navbar li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(130, 130, 227);
+        transition: 0.1s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+        
+        color: rgb(6, 6, 76);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+        content:"";
+        background: rgb(6, 6, 76);
+        width:30%; 
+        height: 2px;
+        position: absolute;
+        bottom: -4px;
+        left:20px
+
+}
+
+/* Landing page */
+
+#hero {
+        background-image: url("Images/model.png");
+      
+       height: 95vh;
+       width: 100%;
+        /* background-position: top 25% right 1; */
+       background-size: cover; 
+       padding: 0 80px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+      
+     
+
+}
+
+#hero h4{
+        padding-bottom: 15px;
+        margin-top: -200px;
+        color: rgb(6, 6, 76);
+}
+#hero h2{
+       
+        color:  rgb(52, 52, 89);
+
+}
+#hero h1{
+        
+        color: rgb(52, 52, 89);
+        padding-bottom: 15px;
+
+}
+
+#hero p{
+       
+        color: rgb(130, 130, 227);
+        padding-bottom: 15px;
+        font-weight: bolder;
+}
+
+#hero button{
+         /* border: 1px solid red; */
+         background-image: url("Images/btn.png");
+         color: rgb(6, 6, 76);
+         padding: 14px 80px 14px 65px;
+         border-radius: 5px;
+         font-size: medium;
+         font-weight: bolder;
+         border: 0;
+         cursor: pointer;
+
+}
+
+#product1{
+        text-align: center;
+        /* border: 1px solid blue; */
+        width: 95%;
+        margin: auto;
+}
+#product1 h2{
+        /* border: 1px solid teal; */
+        color: rgb(6, 6, 76);
+        font-size: 30px;
+        margin-top: 10px;
+
+}
+#product1 p{
+        /* border: 1px solid teal; */
+        color: rgb(130, 130, 227);
+       font-weight: bolder;
+
+}
+        
+#product1 .pro{
+        border: 1px solid rgb(184, 170, 170);
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        cursor: pointer;
+        border-radius: 25px;
+        margin: 15px 10px;
+        transition: 0.2s ease;
+        position: relative;
+        box-shadow: rgba(224, 215, 215, 0.35) 0px 5px 15px;
+
+
+}
+#product1 .pro:hover{
+       
+        box-shadow: rgba(12, 12, 12, 0.35) 0px 5px 15px;
+
+
+}
+
+#product1 .pro img{
+        border: 1px solid rgb(36, 13, 13);
+        width: 100%;
+        min-width: 250px;
+        padding: 10px 12px;
+}
+#product1 .pro img{
+        width:100%;
+        border-radius: 20px;
+        
+}
+
+#product1 .pro .des{
+        /* border: 1px solid blue; */
+        text-align: start;
+        padding: 0 15px;
+}
+
+#product1 .pro .des span{
+        /* border: 1px solid blue; */
+        padding: 0 15px;
+        color: gray;
+        font-weight: bolder;
+        font-size: 18px;
+}
+
+#product1 .pro .des i{
+        /* border: 1px solid rgb(12, 12, 69); */
+        font-size: 12px;
+        color:  rgb(130, 130, 227);
+}
+
+#product1 .pro .des h4{
+        /* border: 1px solid rgb(12, 12, 69); */
+        color: rgb(6, 6, 76);
+        padding-top: 7px;
+        font-size: 15px;
+      
+        
+}
+
+#product1 .pro .cart{
+        /* border: 1px solid red; */
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: rgb(130, 130, 227);
+        font-weight: 500;
+        color:rgb(6, 6, 76) ;
+        position: absolute;
+        bottom:20px;
+        right:10px
+}
+
+.pro-container{
+        /* border: 1px solid teal; */
+        display: flex;
+        flex-wrap: wrap;
+}
+
